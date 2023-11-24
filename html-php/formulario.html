@@ -4,8 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teste prático HTML e PHP</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <!-- SEU CÓDIGO HTML AQUI -->
+
+  <div class="container">
+    <h3>Formulári de cadastro</h3>
+    <form action="processa_formulario.php" method="post" class="form">
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" name="name">
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="text" name="email">
+      </div>
+      <div>
+        <label for="password">Senha:</label>
+        <input type="password" name="password">
+      </div>
+      <div class="flex items-center w-100 justify-center">
+        <button type="submit" value="enviar">Enviar</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>

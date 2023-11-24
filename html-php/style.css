@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form{
+ display: flex;   
+ flex-direction: column;
+ gap: 10px;
+}
+
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.justify-center{
+    justify-content: center;
+}
