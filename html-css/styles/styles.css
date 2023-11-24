@@ -6,6 +6,38 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #18181b;
+  color: #ffffff;
 }
 
-/* SEU CSS AQUI */
+.text-center{
+  text-align: center;
+}
+
+header {
+  background-color: #27272c;
+  text-align: center;
+  padding: 20px;
+}
+
+a {
+  color: #b295ff;
+}
+
+a:hover {
+  color: #b295ff80;
+}
+
+ol {
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+li {
+  background: #2c2a31;
+  padding: 8px 5px;
+}
+
+li:nth-child(odd) { 
+  background: #222026;
+}
