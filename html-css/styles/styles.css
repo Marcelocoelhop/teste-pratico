@@ -6,6 +6,55 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: antiquewhite;
 }
 
 /* SEU CSS AQUI */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title{
+color: darkgrey;
+margin-bottom: 20px;
+}
+
+.container a:hover{
+  color: blue;
+}
+
+.lista{
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lista li:nth-child(odd){
+  background-color: lightblue;
+}
+
+.lista li:nth-child(even){
+  background-color: aquamarine;
+}
+
+.flex{
+  display: flex;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.justify-center{
+  justify-content: center;
+}
