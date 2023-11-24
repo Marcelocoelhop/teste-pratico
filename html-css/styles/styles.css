@@ -6,6 +6,19 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color:#121213b5;
 }
-
+.cabecalho{
+  color: #fff;
+  text-align: center;
+}
+.lista{
+  background-color: #fff;
+}
+#link:hover{
+  color: #fff;
+}
+#link{
+  color: #ff3000;
+}
 /* SEU CSS AQUI */
