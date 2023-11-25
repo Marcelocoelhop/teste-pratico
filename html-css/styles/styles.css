@@ -8,4 +8,82 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+
+
 /* SEU CSS AQUI */
+
+:root {
+  --base: #F2F2F0;
+  --light-gray: #D9D4CC;
+  --dark-gray: #4C4841;
+  --light-wine: #A63F03;
+  --dark-wine: #591902;
+  --light-brown: #C68560;
+}
+
+body {
+  background-color: var(--light-gray);
+  padding: 32px;
+}
+
+header {
+  display: flex;
+  color: var(--dark-wine) !important;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+h2,
+ol,
+p {
+  color: var(--dark-gray);
+
+}
+
+ol li {
+  width: 100%;
+  background-color: var(--base);
+  color: var(--dark-gray);
+  padding: 8px;
+  border-radius: 6px;
+  margin: 12px;
+}
+
+ol li:nth-child(2n) {
+  background-color: var(--light-brown);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 24px;
+  gap: 32px;
+  margin: 0 auto;
+  border: 1px solid var(--light-wine);
+  border-radius: 16px;
+}
+
+p {
+  margin-left: auto;
+}
+
+a {
+  color: var(--light-brown);
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--light-wine);
+}
+
+a:hover,
+a:active {
+  color: var(--dark-wine);
+}

@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teste prático HTML e PHP</title>
+  <!-- Para não criar novos arquivos, exclusivamente nesse teste, estou colocando o style aqui -->
+  <link href="./css/style.css" rel="stylesheet">
 </head>
+
 <body>
-  <!-- SEU CÓDIGO HTML AQUI -->
+  <main>
+    <div class="container">
+      <h1>Formulário</h1>
+      <form class="form-body" method="post" action="./processa_formulario.php">
+        <div class="form-group">
+          <input name="name" id="name-input" type="text" placeholder=" " required />
+          <label for="name-input">Nome</label>
+        </div>
+        <div class="form-group">
+          <input name="email" id="email-input" type="email" placeholder=" " required />
+          <label for="email-input">Email</label>
+        </div>
+        <div class="form-group">
+          <input name="password" id="password-input" type="password" placeholder=" " required />
+          <label for="password-input">Senha</label>
+        </div>
+        <button class="button" type="submit" name="action" value="enviar">Enviar</button>
+      </form>
+    </div>
+
+  </main>
 </body>
+
 </html>
