@@ -6,6 +6,20 @@
   <title>Teste prático HTML e PHP</title>
 </head>
 <body>
-  <!-- SEU CÓDIGO HTML AQUI -->
+  <form action="processa_formulario.php" method="post">
+    <div>
+      <label for="nome">Nome: </label>
+      <input type="text" id="nome" name="nome">
+    </div>
+    <div>
+      <label for="email">Email: </label>
+      <input type="text" id="email" name="email">
+    </div>
+    <div>
+      <label for="senha">Senha: </label>
+      <input type="password" id="senha" name="senha">
+    </div>
+    <input type="submit" id="senha" name="enviar" value="Enviar">
+  </form>
 </body>
 </html>
