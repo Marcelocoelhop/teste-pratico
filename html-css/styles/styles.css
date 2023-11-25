@@ -6,6 +6,26 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background: #eee;
 }
 
-/* SEU CSS AQUI */
+h1 {
+  text-align: center;
+  color: #337;
+}
+
+li:nth-child(even) {
+  background: #ccc;
+}
+
+li:nth-child(odd) {
+  background: #aaa;
+}
+
+a {
+  color: #339;
+}
+
+a:hover {
+  color: #33d;
+}
