@@ -6,6 +6,51 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #fffcdd;
 }
 
-/* SEU CSS AQUI */
+.header{
+  color:#805841;
+  text-align:center;
+  margin-top:1vw;
+}
+section{
+  padding-top: 3%;
+}
+.center{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+}
+.title{
+  color:#681515;
+  font-size: 2vw;
+  padding: 1vw;
+}
+ol{
+  color: #681515;
+}
+li{
+  background-color: #f5a2a2;
+  font-size: 1.5vw;
+  padding: 1vw;
+}
+li:nth-child(even){
+  background-color: #ffd8d8;
+}
+
+a{
+  text-decoration: none;
+  color: #805841;
+}
+
+a:hover,
+a:active{
+  color: #f5a2a2;
+}
+
+p{
+  margin-top: 2vw;
+  color: #805841;
+}
