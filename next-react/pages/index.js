@@ -2,6 +2,8 @@ import { useState } from "react";
 
 export default function Contador() {
   const [count, setCount] = useState(0);
+  
+  // Não sei se era obrigado a fazer com as funções...
 
   return (
     <div>
