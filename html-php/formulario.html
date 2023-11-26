@@ -3,9 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
   <title>Teste prático HTML e PHP</title>
 </head>
 <body>
-  <!-- SEU CÓDIGO HTML AQUI -->
+
+    <div class="container">
+        <h3 class="header">Formulário para cadastro no Teste Prático da ProConsult Engenharia</h3>
+
+        <input class="input" type="text" placeholder="Insira seu nome aqui." id="nome" name="nome" required/>
+        <input class="input" type="email" placeholder="Insira seu e-mail" id="email" name="email" required />
+        <input class="input" type="password" placeholder="Insira sua senha." id="senha" name="senha" required/>
+        
+        <input onclick="submit()" type="submit" value="Cadastrar" class="button">
+
+        <div id="retorno"></div>
+        <div id="progress">
+          <div id="bar"></div>
+        </div>
+
+    </div>
+
 </body>
+
+
+<script>
+  function submit(){
+       nome = document.getElementById('nome').value;
+       email = document.getElementById('email').value;
+       senha = document.getElementById('senha').value;
+
+        (async () => {
+        const rawResponse = await fetch('processa_formulario.php', {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({nome:nome, senha:senha,email:email})
+        });
+        const content = await rawResponse.json();
+        if(content.nome){
+          document.getElementById("retorno").innerHTML = "<h3>Nome: "+content.nome+"</h3><h3>E-mail: "+content.email+"</h3>";
+        }else{
+          content.forEach(element => {
+            document.getElementById("retorno").innerHTML = document.getElementById("retorno").innerHTML + "<h3>"+element+"</h3>";
+          });
+        }
+
+        barWidth = 0;
+        document.getElementById("progress").style.display = "block";
+        let intervalID = setInterval(() => {
+          
+          if (barWidth === 100) {
+            document.getElementById("retorno").innerHTML = "";
+            document.getElementById("bar").style.width = 0;
+            document.getElementById("progress").style.display = "none";
+            clearInterval(intervalID);
+          } else {
+            barWidth++;
+            document.getElementById("bar").style.width = `${barWidth}%`;
+          }
+        }, 30);
+        })();
+  }
+</script>
+
 </html>
