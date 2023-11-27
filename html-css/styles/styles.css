@@ -6,6 +6,57 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: rgb(214, 241, 241);
 }
 
-/* SEU CSS AQUI */
+#cabecalho {
+ margin-top: 50px;
+ margin-bottom: 80px;
+ text-align: center;
+ color: rgb(112, 112, 112);
+}
+ 
+h3 {
+  color: rgb(112, 112, 112);
+  text-align: center;
+}
+
+.div_list {
+  width: 450px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+li {
+  padding: 10px;
+  border: solid 1px rgb(231, 231, 231);
+  color: rgb(112, 112, 112);
+  background-color: white;
+}
+
+li:hover {
+  background-color: rgb(169, 252, 252);
+  padding: 13px;
+}
+
+.div_link {
+  width: 70px;
+  margin: auto;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(112, 112, 112);
+  margin-top: 18px;
+  font-size: 18px;
+}
+
+.link:hover {
+  color: rgb(238, 124, 104);
+  font-size: 20px;
+}
