@@ -1,3 +1,15 @@
+:root {
+  --background: #FAFAFA;
+  --white: #FFFFFF;
+  --base-card: #F3F2F2;
+  --base-label: #8D8686;
+  --base-button: #E6E5E5;
+  --base-input: #EDEDED;
+  --purple: #8047F8;
+  --purple-dark: #4B2995;
+  --base-text: #574F4D;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +17,58 @@
 }
 
 body {
+  background: var(--background);
   font-family: 'Roboto', sans-serif;
 }
 
-/* SEU CSS AQUI */
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  padding: 1rem;
+  background: var(--base-card);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--purple);
+
+  margin-bottom: 2rem;
+}
+
+.box {
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.list li {
+  padding: 0.5rem;
+  background: var(--purple);
+}
+
+.list li:nth-child(odd) {
+  padding: 0.5rem;
+  background: var(--purple-dark);
+}
+
+.box a {
+  font-size: 1.5rem;
+  color: var(--purple);
+}
+
+.box a:hover {
+  color: var(--purple-dark);
+}
