@@ -1,16 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css">
-  <title>Teste prático HTML e CSS</title>
-</head>
-<body>
-  <!-- SEU CÓDIGO HTML AQUI -->
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Teste prático HTML e CSS</title>
+  </head>
+  <body>
+    <div>
+      <h1>Minha Página Inicial</h1>
+    </div>
+
+    <div class="lista">
+      <ol>
+        <li>
+          <div class="item">
+            Prova de Matemática
+            <div class="botoes">
+              <button class="alterar" onclick="alterarTexto(this)">
+                Alterar
+              </button>
+              <button class="excluir" onclick="excluirItem(this)">
+                Excluir
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            Prova de Física
+            <div class="botoes">
+              <button class="alterar" onclick="alterarTexto(this)">
+                Alterar
+              </button>
+              <button class="excluir" onclick="excluirItem(this)">
+                Excluir
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            Prova de Português
+            <div class="botoes">
+              <button class="alterar" onclick="alterarTexto(this)">
+                Alterar
+              </button>
+              <button class="excluir" onclick="excluirItem(this)">
+                Excluir
+              </button>
+            </div>
+          </div>
+        </li>
+      </ol>
+        <button class="adicionar" onclick="adicionarItem()">
+          Adicionar Item
+        </button>
+    </div>
+    <div class="link">
+      <a href="https://www.google.com">Pesquisar</a>
+    </div>
+
+    <script>
+      function alterarTexto(button) {
+        var novoTexto = prompt("Digite o novo texto:");
+        if (novoTexto !== null) {
+          button.parentNode.parentNode.firstChild.nodeValue = novoTexto;
+        }
+      }
+
+      function excluirItem(button) {
+        var listItem = button.parentNode.parentNode.parentNode;
+        listItem.parentNode.removeChild(listItem);
+      }
+
+      function adicionarItem() {
+        var novoItem = prompt("Digite o texto para o novo item:");
+        if (novoItem !== null) {
+          var lista = document.querySelector(".lista ol");
+          var novoLi = document.createElement("li");
+          novoLi.innerHTML = `
+        <div class="item">
+            ${novoItem}
+            <div class="botoes">
+              <button class="alterar" onclick="alterarTexto(this)">Alterar</button>
+              <button class="excluir" onclick="excluirItem(this)">Excluir</button>
+            </div>
+          </div>
+        `;
+          lista.appendChild(novoLi);
+        }
+      }
+    </script>
+  </body>
 </html>

@@ -5,7 +5,62 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(
+    180deg,
+    rgba(218, 196, 174, 1) 0%,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+h1 {
+  text-align: center;
+  color: #130e0e;
+  padding: 1rem;
 }
 
-/* SEU CSS AQUI */
+.item {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.item button {
+  margin-top: 12px;
+  padding: 2px;
+  border-radius: 8px;
+}
+
+.adicionar {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.lista li:nth-child(even) {
+  background-color: rgb(168, 122, 79);
+}
+
+.lista li:nth-child(odd) {
+  background-color: rgb(77, 67, 67);
+}
+
+.lista {
+  margin: auto;
+  width: 40%;
+  color: white;
+  max-height: 56rem;
+  overflow-y: auto;
+}
+
+.link {
+  color: white;
+  text-align: center;
+}
+
+.link :hover {
+  border-radius: 5px;
+  padding: 4px;
+  background-color: white;
+  color: black;
+}
