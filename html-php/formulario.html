@@ -6,6 +6,28 @@
   <title>Teste prático HTML e PHP</title>
 </head>
 <body>
-  <!-- SEU CÓDIGO HTML AQUI -->
+  <h2>Cadastro</h2>
+
+  <form method="post" action="processa_formulario.php">
+
+    <label>Nome:</label>
+    <input type="text" name="nome" placeholder="Digite o nome completo">
+
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" placeholder="Digite o email">
+
+    <br>
+
+    <label for="senha">Senha:</label>
+    <input type="password" name="senha" placeholder="Digite a senha">
+
+    <br>
+
+    <input type="submit" value="Enviar">
+  </form>
+
+  
 </body>
 </html>
