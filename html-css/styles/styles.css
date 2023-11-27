@@ -8,4 +8,30 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* SEU CSS AQUI */
+.background{
+  background-color: rgb(85, 85, 85);
+}
+
+h1{
+  text-align: center;
+  color:rgb(255, 255, 255);
+
+}
+
+.text1{
+  background-color:black;
+  color:azure;
+}
+
+.text2{
+  background-color:rgb(59, 59, 59);
+  color:azure;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}

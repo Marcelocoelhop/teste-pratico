@@ -100,3 +100,5 @@ Certifique-se de ter o Node.js com o comando no cmd ou powershell `node -v` inst
 - Teste se o componente renderiza corretamente e se o contador aumenta ao clicar no botão.
 
 Powered by [SigmaCivil](https://sigmacivil.com.br).
+
+Teste Finalizado - por Nilson Carvalho
