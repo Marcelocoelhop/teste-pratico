@@ -16,4 +16,5 @@ test('increments and decrements count correctly', () => {
 
   fireEvent.click(decrementButton);
   expect(countDisplay).toHaveTextContent('0');
+  
 });
