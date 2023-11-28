@@ -6,6 +6,20 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color:grey;
 }
 
+.h1 {
+  text-align:center;
+  color:white;
+  font-weight: bold;
+}
+a:hover {
+  background-color: yellow;
+}
+a {
+  color: darkgreen;
+  text-decoration: underline;
+  transition: all .6s ;
+}
 /* SEU CSS AQUI */
