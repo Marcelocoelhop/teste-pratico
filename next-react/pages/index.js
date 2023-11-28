@@ -3,13 +3,21 @@ import { useState } from "react";
 export default function Contador() {
   const [count, setCount] = useState(0);
 
-  const increment = () => {};
+  const increment = () => {
+    let val = count
+    val += 1
+    setCount(val)
+  };
 
-  const decrement = () => {};
+  const decrement = () => {
+    let val = count
+    val -= 1
+    setCount(val)
+  };
 
   return (
     <div>
-      <h1>0</h1>
+      <h1>{count}</h1>
       <button
         type='button'
         onClick={increment}
