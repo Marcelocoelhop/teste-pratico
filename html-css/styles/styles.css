@@ -5,7 +5,31 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* SEU CSS AQUI */
+
+.container {
+  background-color: azure;
+}
+
+header {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: cornflowerblue;
+}
+
+li:nth-of-type(odd) {
+  background-color: gray;
+}
+
+a {
+  color: red;
+}
+a:hover {
+  color: green;
+}
