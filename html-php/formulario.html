@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste prático HTML e PHP</title>
-</head>
-<body>
-  <!-- SEU CÓDIGO HTML AQUI -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste prático HTML e PHP</title>
+  </head>
+  <body>
+    <!-- SEU CÓDIGO HTML AQUI -->
+
+    <form action="processa_formulario.php" method="post">
+      <fieldset>
+        <label for="name">Nome:</label>
+        <input
+          type="text"
+          name="nome"
+          id="name"
+          placeholder="insira seu nome"
+          required
+        />
+      </fieldset>
+      <fieldset>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="insira seu email"
+          required
+        />
+      </fieldset>
+      <fieldset>
+        <label for="password">Senha:</label>
+        <input
+          type="password"
+          name="senha"
+          id="password"
+          placeholder="insira sua senha"
+          required
+        />
+      </fieldset>
+    </form>
+  </body>
 </html>
