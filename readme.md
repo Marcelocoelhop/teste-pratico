@@ -14,6 +14,8 @@ Este desafio foi desenvolvido com o intuído de mostrar as habilidades nas tecno
   - Git
   - GitHub
 
+obs: utilizar PHP 8.1 ou superior para execução do teste de php.
+
 ## Instalação - Projeto
 
 ##### Requisitos:
