@@ -1,16 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css">
-  <title>Teste prático HTML e CSS</title>
-</head>
-<body>
-  <!-- SEU CÓDIGO HTML AQUI -->
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Teste prático HTML e CSS</title>
+  </head>
+  <body>
+    <header>
+      <img src="./styles/assets/eu-guitar.jpg" alt="" id="profile-photo" />
+      <h1>Minha página inicial</h1>
+    </header>
+    <main>
+      <section>
+        <div class="content" id="description">
+          <p>
+            Nesse teste de HTML e CSS resolvi contar um pouco mais sobre minha
+            outra paixão além da tecnologia que é a música e principalmente o
+            Rock And Roll!!
+          </p>
+        </div>
+        <div class="content" id="band-list">
+          <div class="content-header">
+            <h2>Lista de bandas favoritas</h2>
+          </div>
+          <ol>
+            <li>Iron Maiden</li>
+            <li>Helloween</li>
+            <li>Deep Purple</li>
+          </ol>
+        </div>
+        <div class="content" id="my-bands">
+          <div class="content-header">
+            <h2>Sobre minhas bandas</h2>
+          </div>
+          <p>
+            Os dois principais projetos de que faço parte são o Carnamaiden, que
+            é um bloco de carnaval de paraibuna que toca versões carnavalescas
+            do Iron Maiden e a Shaolin Monkeys que é uma banda de geek rock que
+            toca o melhor das músicas de jogos, animes, desenhos e filmes!
+          </p>
+          <br />
+          <p>
+            Segue o link para o instagram do Carnamaiden e o do site da Shaolin
+            Monkeys que desenvolvi em worpress com o baixista da banda:
+          </p>
+          <div id="my-band-links">
+            <a
+              href="https://www.instagram.com/carnamaidenoficial/"
+              target="_blank"
+              id="carnamaiden-link"
+              >Carnamaiden</a
+            >
+            <a
+              href="https://shaolinmonkeys.com.br/"
+              id="shaolin-monkeys-link"
+              target="_blank"
+              >Shaolin Monkeys</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Aqui está um parágrafo com um botão para acessar o</p>
+      <a href="https://www.google.com.br/" target="_blank">GOOGLE</a>
+    </footer>
+  </body>
 </html>
