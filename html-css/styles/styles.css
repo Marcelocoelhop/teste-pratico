@@ -5,7 +5,30 @@
 }
 
 body {
+  background-color: #d3d3d3;
   font-family: 'Roboto', sans-serif;
 }
 
-/* SEU CSS AQUI */
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+ol li:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff6600;
+}
