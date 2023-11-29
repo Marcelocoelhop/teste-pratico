@@ -4,8 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teste prático HTML e PHP</title>
+  <style>
+		input {
+			display: block;
+			margin-bottom: 1em;
+		}
+  </style>
 </head>
 <body>
+	<form action="processa_formulario.php">
+		<input type="text" placeholder="Nome" name="nome">
+		<input type="email" placeholder="Email" name="email">
+		<input type="password" placeholder="Senha" name="senha">
+		<button type="Submit">Enviar</button>
+	</form>
   <!-- SEU CÓDIGO HTML AQUI -->
 </body>
 </html>

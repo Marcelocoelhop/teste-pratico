@@ -1,11 +1,39 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Roboto', sans-serif;
+	background-color: #0f0f0f;
+	font-family: 'sans';
+	color: white;
 }
 
-/* SEU CSS AQUI */
+h1 {
+	color: yellow;
+	text-align: center;
+}
+
+a {
+	color: yellow;
+}
+
+a:hover {
+	color: orange;
+}
+
+ol {
+	padding: 0;
+}
+
+ol li {
+	padding : 0.5em;
+	list-style-position: inside;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	margin-bottom: 1em;
+	border-radius: 5px;
+}
+
+ol li:nth-child(odd) {
+	background-color: #1f1f1f;
+}
+
+ol li:nth-child(even) {
+	background-color: #2f2f2f;
+}
