@@ -6,5 +6,9 @@ if (isset($_GET)) {
 	else if (!filter_var($_GET['email'], FILTER_VALIDATE_EMAIL)) {
 		echo '<h1>Email inválido</h1>';
 	}
+	else {
+		echo 'Nome: '.$_GET['nome'].'<br>';
+		echo 'Email: '.$_GET['email'].'<br>';	
+	}
 }
 ?>
