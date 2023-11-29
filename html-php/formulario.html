@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste prático HTML e PHP</title>
-</head>
-<body>
-  <!-- SEU CÓDIGO HTML AQUI -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Teste prático HTML e PHP</title>
+  </head>
+  <body>
+    <main>
+      <div id="form">
+        <h1>Formulário para o PHP</h1>
+        <form action="processa_formulario.php" method="POST">
+          <div class="input-div">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" />
+          </div>
+          <div class="input-div">
+            <label for="nome">Email:</label>
+            <input type="text" id="email" name="email" />
+          </div>
+          <div class="input-div">
+            <label for="nome">Senha:</label>
+            <input type="password" id="senha" name="senha" />
+          </div>
+          <input type="submit" id="submit-button" value="Enviar" />
+        </form>
+      </div>
+    </main>
+  </body>
 </html>

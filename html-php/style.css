@@ -1,0 +1,47 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #d6eef6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: white;
+  width: 40vw;
+  height: 40vh;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-div {
+  margin: 15px 0 15px 0;
+}
+
+.input-div input {
+  padding: 10px;
+}
+
+#submit-button {
+  padding: 10px 50px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#error {
+  color: red;
+}
