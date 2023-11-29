@@ -6,6 +6,29 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: rgb(65, 148, 148);
+  display: flex;
+  flex-direction: column
 }
 
-/* SEU CSS AQUI */
+h1 {
+  color: rgb(211, 211, 211);
+  align-self: center;
+  justify-self: center;
+}
+
+ol li {
+  background-color: rgba(211, 211, 211, 0.197);
+}
+
+ol li:nth-of-type(2n) {
+  background-color: rgba(211, 211, 211, 0.611);
+}
+
+a {
+  color: rgb(80, 7, 13);
+}
+
+a:hover {
+  color: rgb(167, 16, 36);
+}
