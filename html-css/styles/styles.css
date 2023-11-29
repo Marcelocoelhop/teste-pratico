@@ -5,7 +5,44 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #d3d3d3;
 }
 
-/* SEU CSS AQUI */
+main {
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+  color: #404343;
+}
+
+header {
+  padding: 5px;
+}
+
+li {
+  padding: 2px 0;
+  margin-left: 20px
+}
+
+li:nth-child(odd) {
+  background-color: #808080;
+}
+
+li:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+div {
+  padding-bottom: 5px;
+}
+
+a {
+  color: green;
+}
+
+a:hover {
+  color: blue;
+}
