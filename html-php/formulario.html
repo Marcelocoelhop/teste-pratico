@@ -1,11 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste prático HTML e PHP</title>
-</head>
-<body>
-  <!-- SEU CÓDIGO HTML AQUI -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      h1 {
+        text-align: center;
+      }
+      .content {
+        margin-top: 5%;
+        width: 450px;
+        height: 500px;
+        border-radius: 20px;
+        padding: 40px;
+        box-sizing: border-box;
+        background: #ecf0f3;
+        box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+      }
+      .error {
+        color: red;
+        font-size: small;
+      }
+      input {
+        text-align: left;
+        margin-top: 10px;
+        width: 70%;
+      }
+
+      label,
+      input {
+        padding: 0;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+      }
+
+      label {
+        margin-bottom: 4px;
+      }
+
+      label:nth-of-type(2) {
+        margin-top: 12px;
+      }
+
+      input::placeholder {
+        color: gray;
+      }
+
+      input {
+        background: #ecf0f3;
+        padding: 10px;
+        padding-left: 20px;
+        height: 50px;
+        font-size: 14px;
+        border-radius: 50px;
+        box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+      }
+
+      .input-submit {
+        color: black;
+        text-align: center;
+        margin: 0 auto;
+        height: 40px;
+        margin-top: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 900;
+        box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+        transition: 0.5s;
+      }
+
+      form {
+        width: 100%;
+      }
+
+      button:hover {
+        box-shadow: none;
+      }
+
+      .form-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <h1>Formulário</h1>
+      </header>
+      <main>
+          <div class="form-content">
+              <form action="processa_formulario.php" method="GET" id="myForm">
+                  <div>
+                      <label for="nome">Nome:</label>
+                      <input type="text" id="nome" name="nome" /><br />
+                      <span id="nomeError" class="error"></span><br />
+                  </div>
+                  <div>
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" /><br />
+                      <span id="emailError" class="error"></span><br />
+                  </div>
+                  <div>
+                      <label for="senha">Senha:</label>
+                      <input type="password" id="senha" name="senha" required /><br /><br />
+                  </div>
+                  <div style="display: flex;">
+                      <input class="input-submit" type="submit" value="Enviar" />
+                  </div>
+              </form>
+          </div>
+      </div>
+      </main>
+      
+      <script>
+        const params = new URLSearchParams(window.location.search);
+  
+        if (params.has("error_name")) {
+          document.getElementById("nomeError").textContent =
+            "Nome não pode ser vazio";
+        }
+        if (params.has("nome")) {
+          document.getElementById("nome").value = params.get("nome");
+        }
+        if (params.has("error_email")) {
+          document.getElementById("emailError").textContent =
+            "Digite um email válido";
+        }
+        if (params.has("email")) {
+          document.getElementById("email").value = params.get("email");
+        }
+      </script>
+  </body>
 </html>
