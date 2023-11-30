@@ -4,27 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teste prático HTML e PHP</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    .container {
+      width: 85%;
+      margin: 0 auto;
+    }
+    header{
+      border-bottom: 1px solid;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 30px;
+      box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2);
+    }
+    .form-group {
+      margin: 1em 0;
+    }
+    label{
+      font-size: 16pt;
+      font-weight: 500;
+    }
+    input{
+      padding: 5px;
+      width: 30%;
+      font-size: 13pt;
+    }
+    button{
+      padding: .5em 1.5em;
+    }
+  </style>
 </head>
 <body>
-  <div>
+  <div class="container">
     <header>
-      <h1>Teste Prático HTML e PHP</h1>
+      <h1 style="text-align: center;">Teste Prático HTML e PHP</h1>
     </header>
     <main>
       <form action="./processa_formulario.php" method="POST">
-        <div>
+        <div class="form-group">
           <label for="nome">Nome:</label>
           <input type="text" id="nome" name="nome" placeholder="Nome">
         </div>
-        <div>
+        <div class="form-group">
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" placeholder="Email">
         </div>
-        <div>
+        <div class="form-group">
           <label for="senha">Senha:</label>
           <input type="password" id="senha" name="senha">
         </div>
-        <div>
+        <div class="form-group">
           <button>
             Enviar
           </button>
