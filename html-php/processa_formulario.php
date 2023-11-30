@@ -11,7 +11,13 @@
       $nome = $_POST['name'];
       $email = $_POST['email'];
 
-      echo "O nome do usuário é $nome e o seu email é $email";
+      // Verifica se o campo "nome" não está vazio e se o email informado é valido
+      if(!empty($_POST['name']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+        echo "O nome do usuário é $nome e o seu email é $email";
+      }
+      else{
+        echo "Por favor, preencha o campo nome corretamente e forneça um endereço de e-mail válido.";
+      }
     }
   ?>
 </body>
