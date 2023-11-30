@@ -4,8 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teste prático HTML e PHP</title>
+  <style>
+    .erro {
+      color: red;
+    }
+  </style>
 </head>
 <body>
-  <!-- SEU CÓDIGO HTML AQUI -->
+  <form action="processa_formulario.php" method="post" onsubmit="return validarFormulario()" novalidate>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required>
+
+    <input type="submit" value="Enviar">
+  </form>
+
+  <div id="mensagens-erro"></div>
+
+  <script>
+    function validarFormulario() {
+      var nome = document.getElementById('nome').value;
+      var email = document.getElementById('email').value;
+      var senha = document.getElementById('senha').value;
+
+      document.getElementById('mensagens-erro').innerHTML = '';
+
+      if (nome.trim() === '') {
+        exibirErro('O campo do nome não pode estar vazio.');
+        return false;
+      }
+
+      if (!isValidEmail(email)) {
+        exibirErro('O endereço de e-mail inserido não é válido.');
+        return false;
+      }
+
+      if (senha.trim() === '') {
+        exibirErro('O campo da senha não pode estar vazio.');
+        return false;
+      }
+
+      return true;
+    }
+
+    function isValidEmail(email) {
+      var re = /\S+@\S+\.\S+/;
+      return re.test(email);
+    }
+
+    function exibirErro(mensagem) {
+      var divErro = document.getElementById('mensagens-erro');
+      var erro = document.createElement('div');
+      erro.className = 'erro';
+      erro.textContent = mensagem;
+      divErro.appendChild(erro);
+    }
+  </script>
 </body>
 </html>
