@@ -1,11 +1,59 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* SEU CSS AQUI */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(13deg, rgba(2, 0, 36, 1) 0%, rgba(74, 9, 121, 0.979224966353729) 38%, rgba(0, 212, 255, 1) 100%);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #250878;
+}
+
+.ordered-list {
+    margin: 15px 0;
+}
+
+.ordered-list li {
+    border-radius: 3px;
+}
+
+.ordered-list li:nth-child(even) {
+    background-color: #6E0878;
+    margin-bottom: 5px;
+}
+
+.ordered-list li:nth-child(odd) {
+    background-color: #081078;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #D4AFB9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+a:hover {
+    color: #5b178a;
+}
