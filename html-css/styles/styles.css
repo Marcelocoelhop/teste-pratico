@@ -6,6 +6,32 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #DDDDDD;
 }
 
-/* SEU CSS AQUI */
+h1 {
+  color: #2862F7;
+  text-align: center;
+}
+
+ol.items-list {
+  list-style: none;
+  padding: 0;
+}
+
+ol.items-list li:nth-child(odd) {
+  background-color: #28F7C5;
+}
+
+ol.items-list li:nth-child(even) {
+  background-color: #28A3F7;
+}
+
+a.google-link {
+  color: #282CF7;
+  text-decoration: none;
+}
+
+a.google-link:hover {
+  color: #7DCEFA;
+}
