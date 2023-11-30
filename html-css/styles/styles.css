@@ -1,11 +1,49 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: rgb(3, 28, 2);
+  color: rgb(47, 197, 47);
 }
 
-/* SEU CSS AQUI */
+h1{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: red;
+  text-align: center;
+}
+
+ol li:nth-child(even) {
+  background-color: rgb(112, 112, 243);
+}
+
+ol li:nth-child(odd) {
+  background-color: rgb(236, 18, 18);
+}
+
+a {
+  color: red;
+}
+a:hover {
+  color: blue;
+}
+
+.animation{
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: animation 2s ease-in-out forwards;
+}
+
+@keyframes animation {
+  from {
+    opacity: 0;
+    transform: translateX(-100%); /* Posição inicial (sem deslocamento) */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Desloca a div 200 pixels para a direita */
+  }
+}
