@@ -9,7 +9,7 @@
 /html-css/.idea/
 /html-php/.idea/
 /next-react/.idea/
-.idea/
+.idea/*
 
 # User-specific stuff
 .idea/**/workspace.xml
