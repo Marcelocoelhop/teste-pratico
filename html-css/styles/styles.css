@@ -1,11 +1,33 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0.5;
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: orange;
 }
 
-/* SEU CSS AQUI */
+.header {
+  text-align: center;
+  color: blue;
+}
+
+#first-li {
+  background-color: blueviolet;
+}
+
+#second-li {
+  background-color: red;
+}
+#third-li {
+  background-color: pink;
+}
+
+p {
+  color: yellow;
+}
+p:hover {
+  color: blue;
+}
