@@ -12,12 +12,12 @@
 
   if($erros) {
     foreach ($erros as $erro) {
-      echo "<h3 style='color: red;>Não foi possível concluir a execução devido aos seguintes erros:</h3>";
-      echo "<p style='color: red;'>" . $erro . "</p>";
+      echo "<h3 style='font-family: sans-serif; color: red;>Não foi possível concluir a execução devido aos seguintes erros:</h3>";
+      echo "<p style='font-family: sans-serif; color: red;'>" . $erro . "</p>";
     }
   } else {
-    echo "<h3>Informações recebidas: </h3>";
-    echo "<p>Nome: " . $nome . "</p>";
-    echo "<p>E-mail: " . $email . "</p>";
+    echo "<h3 style='font-family: sans-serif;'>Informações recebidas: </h3>";
+    echo "<p style='font-family: sans-serif;'>Nome: " . $nome . "</p>";
+    echo "<p style='font-family: sans-serif;'>E-mail: " . $email . "</p>";
   }
 ?>

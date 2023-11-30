@@ -3,23 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
   <title>Teste prático HTML e PHP</title>
 </head>
 <body>
-  <div>
+  <div style="display: flex; flex-direction: column; align-items: center;">
     <h2>Insira seus dados</h2>
-    <form action="processa_formulario.php" method="post">
+    <form 
+      action="processa_formulario.php" 
+      method="post"
+    >
+      <div class="campo">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu Nome">
+      </div>
 
-      <label for="nome">Nome:</label>
-      <input type="text" name="nome" placeholder="Digite seu Nome">
+      <div class="campo">
+        <label for="nome">E-mail:</label>
+        <input type="email" name="email" placeholder="Digite seu E-mail">
+      </div>
 
-      <label for="nome">E-mail:</label>
-      <input type="email" name="email" placeholder="Digite seu E-mail">
-
-      <label for="nome">Senha:</label>
-      <input type="password" name="senha" placeholder="Digite sua Senha">
+      <div class="campo">
+        <label for="nome">Senha:</label>
+        <input type="password" name="senha" placeholder="Digite sua Senha">
+      </div>
       
-      <input type="submit">
+      <input type="submit" class="botao">
     </form>
   </div>
 </body>
