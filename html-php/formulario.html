@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste prático HTML e PHP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste prático HTML e PHP</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
-  <!-- SEU CÓDIGO HTML AQUI -->
+<div class="container-form">
+    <div class="wrap-form">
+        <div class="alert alert-success"></div>
+        <form class="basic-form validate-form" action="processa_formulario.php" method="post">
+            <div class="input-group validate-input" data-validate="Nome é obrigatório">
+                <span class="input-label">Nome</span>
+                <input class="input-field" type="text" name="name" placeholder="Digite seu nome">
+                <span class="input-focus"></span>
+            </div>
+            <div class="input-group validate-input" data-validate="Um email válido é requerido">
+                <span class="input-label">Email</span>
+                <input class="input-field" type="email" name="email" placeholder="Digite seu endereço de email">
+                <span class="input-focus"></span>
+            </div>
+            <div class="input-group validate-input" data-validate="Senha é obrigatória">
+                <span class="input-label">Senha</span>
+                <input class="input-field" type="password" name="password" placeholder="Digite uma senha">
+                <span class="input-focus"></span>
+            </div>
+            <div class="container-form-btn">
+                <div class="wrap-form-btn">
+                    <div class="form-bgbtn"></div>
+                    <button class="form-btn" type="submit">
+                        <span>
+                            Enviar
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
