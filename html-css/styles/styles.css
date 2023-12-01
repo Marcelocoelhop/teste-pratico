@@ -6,6 +6,34 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #e5e5e5;
+  margin: 0;
 }
 
-/* SEU CSS AQUI */
+h1 {
+  color: #336699;
+  text-align: center;
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+li:nth-child(odd) {
+  background-color: #d0d0d0;
+}
+
+li:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+a {
+  color: #336699;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff6600;
+}
