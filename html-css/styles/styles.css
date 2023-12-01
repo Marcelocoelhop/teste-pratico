@@ -6,6 +6,44 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: rgb(9, 68, 74);
 }
 
 /* SEU CSS AQUI */
+.content{
+  container: my-layout;
+  text-align:center
+}
+
+/* SEU CSS AQUI */
+a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.lista {
+  box-sizing: content-box;
+  width: 30%;
+  padding: 1em;
+}
+
+
+/* Estilo para os itens ímpares da lista */
+li:nth-child(odd) {
+  background-color: #f2f2f2; /* Cor de fundo para os itens ímpares */
+}
+
+/* Estilo para os itens pares da lista */
+li:nth-child(even) {
+  background-color: #e6e6e6; /* Cor de fundo para os itens pares */
+}
+
+a:hover {
+  color: #00f;
+}
+
+h1{
+  color: rgb(0, 166, 255);
+}
+
